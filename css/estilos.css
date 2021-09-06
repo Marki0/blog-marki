@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px rgb(153, 128, 48);
+    z-index: 2;
+
+}
+.header-contenedor{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b {
+    color: rgb(207, 180, 104);
+
+}
+.menu{
+    height: 80px;
+
+
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0% 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected :before{
+        content: '';
+        width: 100%;
+        height: 4px;
+        background:rgb(207, 180, 104) ;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+}
+
+.menu nav ul li a{
+    color: #777;
+    font-size: 18px;
+    transition: color 300ms;
+}
+.menu nav ul li a:hover{
+    color: rgb(207, 180, 104)
+}
+ 
+    
+
+
+.menu .text-menu-selected{
+    color: rgb(207, 180, 104);
+}
+/*portada*/
+
+.container-cover {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../imagenes/empire\ ny.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+
+
+  } 
+  .container-cover:before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background:rgba(146, 128, 76, 0.5) ;
+      position:absolute;
+      top: 0;
+      left: 0;
+  }
+
+  .container-info-cover{
+      max-width: 800px;
+      height: 500px;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index:1;
+
+  }
+  .container-info-cover h1{
+      font-size: 60px;
+      font-weight: 700;
+      color:white;
+      margin-bottom: 20px;
+
+  }
+  .container-info-cover p{
+      
+      color:white;
+      font-size: 20px;
+      font-weight: 900;
+      
+  }
+
+  /*contenedor contenido del articulo*/
+  .container-content{
+      width: 1200px;
+      margin: auto;
+      margin-top: 70px;
+
+}
+  article{
+      width: 100%;
+      padding: 30px;
+      padding-bottom: 40px;
+      box-shadow: -10px 0 -30px black;
+      border-radius: 6px;
+      position: relative;
+      overflow: hidden;
+      
+
+  }
+  article::before{
+      content: '';
+      width: 100%;
+      height: 6px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:rgb(207, 180, 104) ;
+  }
+  article h1{
+      margin-top: 5%;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+  }
+  article h2{
+      margin-top: 5%;
+      font-weight: 700;
+  }
+  article p{
+      font-weight: 700;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #777;
+  }
+  article img{
+      width: 100%;
+      margin-top: 20px;
+  }
+  
+  /*footer-pie de pagina*/
+  
+  .container-footer{
+      width: 100%;
+      padding: 40px 0px;
+      background: rgb(255, 255, 255);
+      margin-top: 40px;
+  }
+  
+  .container-footer footer{
+      max-width: 1200px;
+      margin: auto;
+      
+  }
+  
+  
+
+  .container-footer footer .logo-footer{
+      text-align: center;
+
+  }
+  .container-footer footer .logo-footer img{
+      width: 80px;
+  }
+  .container-footer footer .redes-footer{
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+
+  }
+
+  .container-footer footer .redes-footer .icon-redes-footer{
+      font-size: 20px;
+      margin: 20px;
+      background: #efefef;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      color: #a2a2a2;
+
+  }
+
+  footer .redes-footer .fa-twitter:hover{
+      background:skyblue;
+      color: #fff;
+  }
+  footer .redes-footer .fa-discord:hover{
+    background:grey;
+    color: #fff;
+}
+footer .redes-footer .fa-instagram:hover{
+    background:linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE3198,  #7540A1, #5443A8);
+    color: #fff;
+}
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    color: #a8a8a8;
+
+}
+.container-footer h4{
+    text-align: center;
+    margin-top: 20px;
+    color: #a8a8a8;
+    font-weight: 400px;
+}
